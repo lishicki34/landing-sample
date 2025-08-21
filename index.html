@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Название проекта — краткое УТП</title>
+  <meta name="description" content="Короткое описание страницы, 140–160 символов.">
+  <meta property="og:title" content="Название проекта — краткое УТП">
+  <meta property="og:description" content="Короткое описание страницы.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Навигация -->
+  <header>
+    <div class="container nav" role="navigation" aria-label="Главная навигация">
+      <a href="#" class="brand">
+        <span class="brand__logo" aria-hidden="true"></span>
+        <span>BrandName</span>
+      </a>
+      <nav class="nav__links" aria-label="Секции страницы">
+        <a href="#features">Преимущества</a>
+        <a href="#product">О продукте</a>
+        <a href="#how">Как это работает</a>
+        <a href="#pricing">Тарифы</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--primary" href="#contact">Оставить заявку</a>
+      </div>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu">Меню</button>
+    </div>
+    <!--Мобильное меню-->
+    <div id="mobileMenu" hidden>
+      <div class="container" style="padding: 10px 0 16px; display: grid; gap: 10px;">
+        <a href="#features">Преимущества</a>
+        <a href="#product">О продукте</a>
+        <a href="#how">Как это работает</a>
+        <a href="#pricing">Тарифы</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__wrap">
+        <div>
+          <span class="eyebrow">Короткий маркер выгоды</span>
+          <h1>Сильный заголовок, который объясняет ценность за 1–2 строки</h1>
+          <p>Расширяющее описание: кому, какую проблему решает, за счет чего. Без воды и сложных терминов.</p>
+          <div style="display:flex; gap:10px; flex-wrap: wrap;">
+            <a href="#contact" class="btn btn--primary">Попробовать сейчас</a>
+            <a href="#product" class="btn btn--ghost">Узнать больше</a>
+          </div>
+        </div>
+        <div class="hero__media" aria-label="Превью/скриншот продукта"></div>
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="features">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Почему мы</span>
+          <h2>Ключевые преимущества</h2>
+        </div>
+        <div class="features">
+          <article class="card"><h3>Преимущество 1</h3><p class="muted">Короткое пояснение выгоды.</p></article>
+          <article class="card"><h3>Преимущество 2</h3><p class="muted">Короткое пояснение выгоды.</p></article>
+          <article class="card"><h3>Преимущество 3</h3><p class="muted">Короткое пояснение выгоды.</p></article>
+          <article class="card"><h3>Преимущество 4</h3><p class="muted">Короткое пояснение выгоды.</p></article>
+          <article class="card"><h3>Преимущество 5</h3><p class="muted">Короткое пояснение выгоды.</p></article>
+          <article class="card"><h3>Преимущество 6</h3><p class="muted">Короткое пояснение выгоды.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- О продукте / Услуге -->
+    <section id="product">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">О продукте</span>
+          <h2>Что именно вы предлагаете</h2>
+        </div>
+        <div class="card">
+          <p class="muted">Опишите продукт/услугу простыми словами, добавьте 2–3 ключевых фичи, цифры, сценарии использования.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section id="how">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Процесс</span>
+          <h2>Как это работает в 3–4 шага</h2>
+        </div>
+        <div class="steps">
+          <div class="card step"><h3>Шаг 1</h3><p class="muted">Коротко: что делает пользователь/сервис.</p></div>
+          <div class="card step"><h3>Шаг 2</h3><p class="muted">Коротко: что происходит дальше.</p></div>
+          <div class="card step"><h3>Шаг 3</h3><p class="muted">Коротко: результат.</p></div>
+          <div class="card step"><h3>Шаг 4</h3><p class="muted">Опционально.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Тарифы -->
+    <section id="pricing">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Тарифы</span>
+          <h2>Простая ценовая линейка</h2>
+        </div>
+        <div class="pricing">
+          <article class="card price">
+            <h3>Start</h3>
+            <div class="price__value">990 ₽</div>
+            <p class="muted">Для начала.</p>
+            <a href="#contact" class="btn btn--primary">Выбрать</a>
+          </article>
+          <article class="card price">
+            <h3>Pro</h3>
+            <div class="price__value">2 900 ₽</div>
+            <p class="muted">Оптимальный выбор.</p>
+            <a href="#contact" class="btn btn--primary">Выбрать</a>
+          </article>
+          <article class="card price">
+            <h3>Business</h3>
+            <div class="price__value">7 900 ₽</div>
+            <p class="muted">Для команд.</p>
+            <a href="#contact" class="btn btn--primary">Выбрать</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Доверие</span>
+          <h2>Что говорят клиенты</h2>
+        </div>
+        <div class="testimonials">
+          <figure class="card"><blockquote class="quote">«Короткий отзыв клиента о пользе.»</blockquote><figcaption class="muted">Имя, компания</figcaption></figure>
+          <figure class="card"><blockquote class="quote">«Еще один сильный отзыв.»</blockquote><figcaption class="muted">Имя, компания</figcaption></figure>
+          <figure class="card"><blockquote class="quote">«Третий отзыв с цифрой результата.»</blockquote><figcaption class="muted">Имя, компания</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Частые вопросы</h2>
+        </div>
+        <details class="card"><summary>Вопрос 1</summary><p class="muted">Короткий ответ.</p></details>
+        <details class="card"><summary>Вопрос 2</summary><p class="muted">Короткий ответ.</p></details>
+        <details class="card"><summary>Вопрос 3</summary><p class="muted">Короткий ответ.</p></details>
+      </div>
+    </section>
+
+    <!-- Контакты / форма захвата -->
+    <section id="contact">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Связаться</span>
+          <h2>Оставьте заявку</h2>
+        </div>
+        <form aria-label="Форма обратной связи" id="leadForm">
+          <div class="form__row">
+            <div>
+              <label for="name">Имя</label>
+              <input id="name" name="name" type="text" placeholder="Иван" required>
+            </div>
+            <div>
+              <label for="phone">Телефон</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+            </div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="msg">Комментарий</label>
+            <textarea id="msg" name="message" rows="4" placeholder="Коротко опишите задачу"></textarea>
+          </div>
+          <div style="display:flex; align-items:center; gap: 12px;">
+            <button class="btn btn--primary" type="submit">Отправить</button>
+            <span class="muted" id="formStatus" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap: 16px; flex-wrap: wrap;">
+      <small>© <span id="year"></span> BrandName</small>
+      <div style="display:flex; gap: 14px;">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Договор оферты</a>
+        <a href="#">Мы в соцсетях</a>
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
