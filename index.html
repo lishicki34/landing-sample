@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Название проекта — краткое УТП</title>
+  <title>Шаблон лендинга</title>
   <meta name="description" content="Короткое описание страницы, 140–160 символов.">
-  <meta property="og:title" content="Название проекта — краткое УТП">
+  <meta property="og:title" content="Название проекта">
   <meta property="og:description" content="Короткое описание страницы.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://example.com">
   <meta property="og:image" content="https://example.com/og-image.jpg">
+  <link rel="stylesheet" href="./fonts/fonts.css" />
   <link rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 <body>
   <!-- Header / Навигация -->
@@ -30,7 +32,7 @@
         <a href="#contact">Контакты</a>
       </nav>
       <div class="nav__cta">
-        <a class="btn btn--primary" href="#contact">Оставить заявку</a>
+        <a class="btn btn--accent" href="#contact">Оставить заявку</a>
       </div>
       <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu">Меню</button>
     </div>
@@ -48,23 +50,20 @@
   </header>
 
   <main>
-    <!-- Hero -->
     <section class="hero" id="hero">
       <div class="container hero__wrap">
         <div>
           <span class="eyebrow">Короткий маркер выгоды</span>
           <h1>Сильный заголовок, который объясняет ценность за 1–2 строки</h1>
           <p>Расширяющее описание: кому, какую проблему решает, за счет чего. Без воды и сложных терминов.</p>
-          <div style="display:flex; gap:10px; flex-wrap: wrap;">
-            <a href="#contact" class="btn btn--primary">Попробовать сейчас</a>
+          <div class="btn--group">
+            <a href="#contact" class="btn btn--accent">Попробовать сейчас</a>
             <a href="#product" class="btn btn--ghost">Узнать больше</a>
           </div>
         </div>
         <div class="hero__media" aria-label="Превью/скриншот продукта"></div>
       </div>
     </section>
-
-    <!-- Преимущества -->
     <section id="features">
       <div class="container">
         <div class="section__head">
@@ -81,8 +80,6 @@
         </div>
       </div>
     </section>
-
-    <!-- О продукте / Услуге -->
     <section id="product">
       <div class="container">
         <div class="section__head">
@@ -94,8 +91,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Как это работает -->
     <section id="how">
       <div class="container">
         <div class="section__head">
@@ -107,11 +102,10 @@
           <div class="card step"><h3>Шаг 2</h3><p class="muted">Коротко: что происходит дальше.</p></div>
           <div class="card step"><h3>Шаг 3</h3><p class="muted">Коротко: результат.</p></div>
           <div class="card step"><h3>Шаг 4</h3><p class="muted">Опционально.</p></div>
+          <div class="card step"><h3>Шаг 5</h3><p class="muted">Доп. информация.</p></div>
         </div>
       </div>
     </section>
-
-    <!-- Тарифы -->
     <section id="pricing">
       <div class="container">
         <div class="section__head">
@@ -123,25 +117,23 @@
             <h3>Start</h3>
             <div class="price__value">990 ₽</div>
             <p class="muted">Для начала.</p>
-            <a href="#contact" class="btn btn--primary">Выбрать</a>
+            <a href="#contact" class="btn btn--accent">Выбрать</a>
           </article>
           <article class="card price">
             <h3>Pro</h3>
             <div class="price__value">2 900 ₽</div>
             <p class="muted">Оптимальный выбор.</p>
-            <a href="#contact" class="btn btn--primary">Выбрать</a>
+            <a href="#contact" class="btn btn--accent">Выбрать</a>
           </article>
           <article class="card price">
             <h3>Business</h3>
             <div class="price__value">7 900 ₽</div>
             <p class="muted">Для команд.</p>
-            <a href="#contact" class="btn btn--primary">Выбрать</a>
+            <a href="#contact" class="btn btn--accent">Выбрать</a>
           </article>
         </div>
       </div>
     </section>
-
-    <!-- Отзывы -->
     <section id="testimonials">
       <div class="container">
         <div class="section__head">
@@ -155,8 +147,6 @@
         </div>
       </div>
     </section>
-
-    <!-- FAQ -->
     <section id="faq">
       <div class="container">
         <div class="section__head">
@@ -168,8 +158,6 @@
         <details class="card"><summary>Вопрос 3</summary><p class="muted">Короткий ответ.</p></details>
       </div>
     </section>
-
-    <!-- Контакты / форма захвата -->
     <section id="contact">
       <div class="container">
         <div class="section__head">
@@ -196,15 +184,13 @@
             <textarea id="msg" name="message" rows="4" placeholder="Коротко опишите задачу"></textarea>
           </div>
           <div style="display:flex; align-items:center; gap: 12px;">
-            <button class="btn btn--primary" type="submit">Отправить</button>
+            <button class="btn btn--accent" type="submit" style="cursor: pointer;">Отправить</button>
             <span class="muted" id="formStatus" role="status" aria-live="polite"></span>
           </div>
         </form>
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
   <footer>
     <div class="container" style="display:flex; justify-content:space-between; gap: 16px; flex-wrap: wrap;">
       <small>© <span id="year"></span> BrandName</small>
