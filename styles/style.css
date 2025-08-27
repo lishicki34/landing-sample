@@ -20,6 +20,14 @@ header {
   padding: 14px 0;
 }
 
+.nav__point {
+  transition: text-shadow 0.3s ease;
+}
+
+.nav__point:hover {
+  text-shadow: 0 0 10px rgba(76, 219, 165, 0.7);;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -189,6 +197,14 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+
+.card.price {
+  transition: box-shadow 0.4s ease;
+}
+
+.card.price:hover {
+  box-shadow: 0 12px 24px rgba(76, 219, 165, 0.4);
 }
 
 .price {
